@@ -1,4 +1,4 @@
-package U9T6;
+package U9T6Lab2;
 
 import java.util.ArrayList;
 
