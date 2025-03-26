@@ -1,3 +1,4 @@
+import U9T1Pt3.Vehicle;
 
 public class Car extends Vehicle {
     private String fabric;

@@ -1,4 +1,4 @@
-package U9T2;
+package U9T1pt3;
 
 public class Truck extends Vehicle {
     private int axles;
@@ -18,13 +18,10 @@ public class Truck extends Vehicle {
       return hasTrailer;
     }
 
-    public void printTruck() {
-      System.out.print("The license plate is " + getLicensePlate() + " and the toll fee is " + getTollFee() + ". There are " + getPassengers() + " passengers and the truck has " + getAxles() + " axles.");
-      System.out.print(" It does");
-      if (!hasTrailer()) {
-        System.out.print(" not");
-      }
-      System.out.println(" have a trailer.");
+    public void printInfo() {
+      super.printInfo();
+      System.out.println("Axles " + axles);
+      System.out.println("Has Trailer?: " + hasTrailer);
     }
 
     public boolean validateLicensePlate() {
@@ -42,5 +39,12 @@ public class Truck extends Vehicle {
         }
       }
       return true;
+    }
+
+    public double calculateTollPrice() {
+      if (hasTrailer) {
+        return getTollFee() * axles * 2;
+      }
+      return getTollFee() * axles;
     }
   }

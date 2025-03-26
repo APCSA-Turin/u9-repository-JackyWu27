@@ -1,5 +1,4 @@
-package U9T2;
-
+package U9T1pt3;
 
 public class Car extends Vehicle {
     private boolean electric;
@@ -19,10 +18,8 @@ public class Car extends Vehicle {
       return discountApplied;
     }
 
-    public void printCar() {
-      System.out.println("License Plate: " + getLicensePlate());
-      System.out.println("Toll Fee: " + getTollFee());
-      System.out.println("Passengers: " + getPassengers());
+    public void printInfo() {
+      super.printInfo();
       System.out.println("Is Electric?: " + electric);
       System.out.println("Has Discount?: " + discountApplied);
     }
@@ -48,5 +45,12 @@ public class Car extends Vehicle {
 
     public void setDiscountApplied(boolean b) {
       discountApplied = b;
+    }
+
+    public double calculateTollPrice() {
+      if (getPassengers() > 3) {
+        return getTollFee() * 4;
+      }
+      return getTollFee() * getPassengers();
     }
   }

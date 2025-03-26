@@ -1,4 +1,4 @@
-package U9T2;
+package U9T1pt3;
 
 
 public class Vehicle {
@@ -33,5 +33,15 @@ public class Vehicle {
     }
     public void setToll(double num) {
       tollFee = num;
+    }
+
+    public void printInfo () {
+      System.out.println("License Plate: " + licensePlate);
+      System.out.println("Toll Fee: " + tollFee);
+      System.out.println("Passengers: " + passengers);
+    }
+
+    public void enter () {
+      System.out.println("You enter the driver's seat.");
     }
   }
