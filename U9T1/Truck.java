@@ -1,5 +1,3 @@
-import U9T1Pt3.Vehicle;
-
 public class Truck extends Vehicle{
     private int oil;
     public Truck (String name, int wheels, int oil) {

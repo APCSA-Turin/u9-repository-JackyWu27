@@ -1,4 +1,4 @@
-package U9T6Lab2;
+package U9T6;
 
 
 public class InsuredShippingItem extends ShippingItem {

@@ -1,5 +1,3 @@
-import U9T1.Vehicle;
-
 public class Bicycle extends Vehicle{
     private int gearCount;
     public Bicycle(String name, int wheels, int gearCount) {
